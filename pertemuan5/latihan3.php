@@ -3,7 +3,7 @@
         ["Putra Perdana", "20120140027", "Teknik informatika", "putra.perdana7@gmail.com"],
         ["Nita Putri Ana", "20120140028", "Teknik informatika", "nita7@gmail.com"],
         ["Hiya Khaira", "20120140029", "Teknik informatika", "hiya.khaira@gmail.com"]
-        ]
+    ];
 ?>
 
 <!DOCTYPE html>
