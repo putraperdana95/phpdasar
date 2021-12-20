@@ -15,7 +15,7 @@ $angka = [213411, 232, 112, 345, 5, 333, 7, 8, 454, 767, 899];
     <title>Document</title>
 
     <style>
-        div {
+        .kotak {
             width: 80px;
             height: 80px;
             background-color: salmon;
@@ -32,13 +32,13 @@ $angka = [213411, 232, 112, 345, 5, 333, 7, 8, 454, 767, 899];
 </head>
 <body>
     <?php for( $i = 0; $i < count($angka); $i++) : ?>
-        <div><?php echo $angka[$i]; ?></div>
+        <div class="kotak"><?php echo $angka[$i]; ?></div>
     <?php endfor; ?>
 
     <div class="clear"> </div>
 
     <?php foreach( $angka as $a  ) : ?>
-        <div><?php echo $a; ?></div>
+        <div class="kotak"><?php echo $a; ?></div>
     <?php endforeach; ?>
 </body>
 </html>
