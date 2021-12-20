@@ -32,12 +32,12 @@
     <div class="kotak"> <?php echo $ang; ?></div>
 <?php endforeach; ?>
 
-<br>
+<p>
 
 <?php $angka2 = [[10,11,12],[13,14,15],[16,17,18]]; ?>
 <?php foreach( $angka2 as $an ) : ?>
     <?php foreach ( $an as $a ) : ?>
-        <div class="kotak"> <?php echo $ang; ?></div>
+        <div class="kotak"> <?php echo $a; ?></div>
     <?php endforeach; ?>
 <?php endforeach; ?>
 </body>
