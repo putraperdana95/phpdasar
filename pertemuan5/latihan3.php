@@ -1,9 +1,33 @@
 <?php
+    // $mahasiswa = [
+    //     ["Putra Perdana", "20120140027", "Teknik informatika", "putra.perdana7@gmail.com"],
+    //     ["Nita Putri Ana", "20120140028", "Teknik informatika", "nita7@gmail.com"],
+    //     ["Hiya Khaira", "20120140029", "Teknik informatika", "hiya.khaira@gmail.com"]
+    // ];
+
+    // Array Asosiasi
     $mahasiswa = [
-        ["Putra Perdana", "20120140027", "Teknik informatika", "putra.perdana7@gmail.com"],
-        ["Nita Putri Ana", "20120140028", "Teknik informatika", "nita7@gmail.com"],
-        ["Hiya Khaira", "20120140029", "Teknik informatika", "hiya.khaira@gmail.com"]
-    ];
+                ["nama" => "Putra Perdana", 
+                "nim" => "20120140027",
+                "jurusan" => "Teknik Informatika",
+                "email" => "putra.perdana7@gmail.com"],
+
+                ["nama" => "Perdana", 
+                "nim" => "20120140029",
+                "jurusan" => "Teknik Informatika",
+                "email" => "perdana@gmail.com"],
+
+                ["nama" => "Adi", 
+                "nim" => "20120140031",
+                "jurusan" => "Teknik Informatika",
+                "email" => "adi@gmail.com"],
+
+                ["nama" => "Ridho", 
+                "nim" => "20120140033",
+                "jurusan" => "Teknik Informatika",
+                "email" => "ridho@gmail.com"]
+            
+            ];
 ?>
 
 <!DOCTYPE html>
@@ -18,10 +42,10 @@
     <h1>Daftar Mahasiswa</h1>
     <?php foreach( $mahasiswa as $mhs ) : ?>
     <ul>
-        <li>Nama :<?= $mhs[0]; ?></li>
-        <li>NIM :<?= $mhs[1]; ?></li>
-        <li>Jurusan :<?= $mhs[2]; ?></li>
-        <li>Email :<?= $mhs[3]; ?></li>
+        <li>Nama :<?= $mhs["nama"]; ?></li>
+        <li>NIM :<?= $mhs["nim1"]; ?></li>
+        <li>Jurusan :<?= $mhs["jurusan2"]; ?></li>
+        <li>Email :<?= $mhs["email"]; ?></li>
     </ul>
     <?php endforeach; ?>
 </body>
