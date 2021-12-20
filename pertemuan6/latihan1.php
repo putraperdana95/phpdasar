@@ -20,6 +20,11 @@
         .kotak:hover {
             transform: rotate(360deg);
             border-radius: 50%;
+
+        }
+
+        .clear {
+            clear: both;
         }
     </style>
 </head>
@@ -32,13 +37,17 @@
     <div class="kotak"> <?php echo $ang; ?></div>
 <?php endforeach; ?>
 
-<p>
+<div class="clear"></div>
 
-<?php $angka2 = [[10,11,12],[13,14,15],[16,17,18]]; ?>
+<?php $angka2 = [[10,11,12],
+                [13,14,15],
+                [16,17,18]
+                ]; ?>
 <?php foreach( $angka2 as $an ) : ?>
     <?php foreach ( $an as $a ) : ?>
         <div class="kotak"> <?php echo $a; ?></div>
     <?php endforeach; ?>
+    <div class="clear"></div>
 <?php endforeach; ?>
 </body>
 </html>
