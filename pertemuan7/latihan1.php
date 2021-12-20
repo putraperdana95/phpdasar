@@ -37,7 +37,7 @@ $mahasiswa = [
                 "gambar" => "4.png"]
             
             ];
-var_dump($_GET);
+
 ?>
 
 <!DOCTYPE html>
@@ -50,16 +50,13 @@ var_dump($_GET);
 </head>
 <body>
     <h1>Daftar Mahasiswa</h1>
-    <?php foreach( $mahasiswa as $mhs ) : ?>
+
     <ul>
-        <li>
-            <img src="img/<?php echo $mhs ["gambar"]; ?>" alt="profil">
-        </li>
-        <li>Nama :<?= $mhs["nama"]; ?></li>
-        <li>NIM :<?= $mhs["nim"]; ?></li>
-        <li>Jurusan :<?= $mhs["jurusan"]; ?></li>
-        <li>Email :<?= $mhs["email"]; ?></li>
+        <?php foreach( $mahasiswa as $mhs ) : ?>
+            <li>
+                <a href="latihan2.php?nama=<?= $mhs["nama"];?>&nim=<?= $mhs["nim"];?>&jurusan=<?= $mhs["jurusan"];?>&email=<?= $mhs["email"];?>&gambar=<?= $mhs["gambar"];?>"><?= $mhs ["nama"]; ?></a>
+            </li>
+        <?php endforeach; ?>
     </ul>
-    <?php endforeach; ?>
 </body>
 </html>
