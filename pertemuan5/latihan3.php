@@ -10,26 +10,22 @@
                 ["nama" => "Putra Perdana", 
                 "nim" => "20120140027",
                 "jurusan" => "Teknik Informatika",
-                "email" => "putra.perdana7@gmail.com",
-                "gambar" => "1.png"],
+                "email" => "putra.perdana7@gmail.com"],
 
                 ["nama" => "Perdana", 
                 "nim" => "20120140029",
                 "jurusan" => "Teknik Informatika",
-                "email" => "perdana@gmail.com",
-                "gambar" => "2.png"],
+                "email" => "perdana@gmail.com"],
 
                 ["nama" => "Adi", 
                 "nim" => "20120140031",
                 "jurusan" => "Teknik Informatika",
-                "email" => "adi@gmail.com",
-                "gambar" => "3.png"],
+                "email" => "adi@gmail.com"],
 
                 ["nama" => "Ridho", 
                 "nim" => "20120140033",
                 "jurusan" => "Teknik Informatika",
-                "email" => "ridho@gmail.com",
-                "gambar" => "4.png"]
+                "email" => "ridho@gmail.com"]
             
             ];
 ?>
@@ -46,9 +42,6 @@
     <h1>Daftar Mahasiswa</h1>
     <?php foreach( $mahasiswa as $mhs ) : ?>
     <ul>
-        <li>
-            <img src="img/<?php $mhs ["gambar"]; ?>" alt="profil">
-        </li>
         <li>Nama :<?= $mhs["nama"]; ?></li>
         <li>NIM :<?= $mhs["nim1"]; ?></li>
         <li>Jurusan :<?= $mhs["jurusan2"]; ?></li>
