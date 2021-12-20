@@ -40,7 +40,7 @@
     <?php foreach( $mahasiswa as $mhs ) : ?>
     <ul>
         <li>
-            <img src="img/<?php $mhs ["gambar"]; ?>" alt="profil">
+            <img src="img/<?php echo $mhs ["gambar"]; ?>" alt="profil">
         </li>
         <li>Nama :<?= $mhs["nama"]; ?></li>
         <li>NIM :<?= $mhs["nim"]; ?></li>
