@@ -4,6 +4,7 @@ if( !isset($_GET["nama"]) ||
     !isset($_GET["nim"]) || 
     !isset($_GET["jurusan"]) ||
     !isset($_GET["email"]) ||
+    !isset($_GET["gambar"])
     ) {
     // redirect
     header( "Location: latihan1.php" );
