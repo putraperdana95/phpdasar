@@ -1,3 +1,18 @@
+<?php
+// cek apakaha tidak ada data di $_GET
+if( !isset($_GET["nama"]) || 
+    !isset($_GET["nim"]) || 
+    !isset($_GET["jurusan"]) ||
+    !isset($_GET["email"]) ||
+    ) {
+    // redirect
+    header( "Location: latihan1.php" );
+    exit;
+}
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
