@@ -10,6 +10,8 @@ if( !isset($_GET["nama"]) ||
     // redirect
     header( "Location: latihan1.php" );
     exit;
+
+    
 }
 
 
