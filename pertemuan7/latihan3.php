@@ -8,7 +8,7 @@
 </head>
 <body>
     <form action="latihan4.php" method="post">
-        MAsukkan Nama :    
+        Masukkan Nama :    
         <input type="text" name="nama">
         <br>
         <button type="submit" name="submit">Kirim</button>
