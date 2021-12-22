@@ -9,13 +9,13 @@ if (isset($_POST["submit"])) {
         echo "
         <script>
         alert('data berhasil ditambahkan')
-        documet.location.href = 'index.php'
+        document.location.href = 'index.php'
         </script>";
     } else {
         echo "
         <script>
         alert('data gagal ditambahkan')
-        documet.location.href = 'index.php'
+        document.location.href = 'index.php'
         </script>";
     }
 }
@@ -39,23 +39,23 @@ if (isset($_POST["submit"])) {
         <ul>
             <li>
                 <label for="nim">NIM :</label>
-                <input type="text" name="nim" id="nim">
+                <input type="text" name="nim" id="nim" required>
             </li>
             <li>
                 <label for="nama">Nama :</label>
-                <input type="text" name="nama" id="nama">
+                <input type="text" name="nama" id="nama" required>
             </li>
             <li>
                 <label for="jurusan">Jurusan :</label>
-                <input type="text" name="jurusan" id="jurusan">
+                <input type="text" name="jurusan" id="jurusan" required>
             </li>
             <li>
                 <label for="email">Email :</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" required>
             </li>
             <li>
                 <label for="gambar">Foto :</label>
-                <input type="text" name="gambar" id="gambar">
+                <input type="text" name="gambar" id="gambar" required>
             </li>
             <li>
                 <button type="submit" name="submit">Tambahkan Data</button>
