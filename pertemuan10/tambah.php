@@ -1,19 +1,23 @@
 <?php
-//  Koneksi ke db
-$conn = mysqli_connect("localhost", "root", "", "phpdasar");
+require 'functions.php';
+
 // cek apakah submit sudah dipencet
 if (isset($_POST["submit"])) {
-    // ambil data dari tiap elemen dalam form
-    $nim = $_POST["nim"];
-    $nama = $_POST["nama"];
-    $email = $_POST["email"];
-    $jurusan = $_POST["jurusan"];
-    $gambar = $_POST["gambar"];
 
-    // query insert data
-    $query = "INSERT INTO mahasiswa VALUES
-                    ('', '$nim', '$nama', '$email', '$jurusan', '$gambar')";
-    mysqli_query($conn, $query);
+    // cek apakah data berhasil ditambahkan atau tidak
+    if (tambah($_POST) > 0) {
+        echo "
+        <script>
+        alert('data berhasil ditambahkan')
+        documet.location.href = 'index.php'
+        </script>";
+    } else {
+        echo "
+        <script>
+        alert('data gagal ditambahkan')
+        documet.location.href = 'index.php'
+        </script>";
+    }
 }
 ?>
 
@@ -58,6 +62,8 @@ if (isset($_POST["submit"])) {
             </li>
         </ul>
     </form>
+
+
 </body>
 
 </html>
