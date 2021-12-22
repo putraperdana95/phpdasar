@@ -32,7 +32,6 @@ if( !isset($_GET["nama"]) ||
         <li>Email :<?= $_GET["email"]; ?></li>
     </ul>
 
-
     <a href="latihan1.php">Kembali ke daftar nama</a>
 </body>
 </html>
