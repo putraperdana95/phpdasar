@@ -60,3 +60,13 @@ function ubah($data)
 
     return mysqli_affected_rows($conn);
 }
+
+function cari($keyword)
+{
+    // global $conn;
+    $query = "SELECT * FROM mahasiswa WHERE 
+    nama LIKE '%$keyword%' OR
+    nim LIKE '%$keyword%'
+    ";
+    return query($query);
+}

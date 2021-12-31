@@ -37,28 +37,6 @@ function hapus($id)
     return mysqli_affected_rows($conn);
 }
 
-
-// function ubah($id)
-// {
-//     $id = $id["id"];
-//     $nim = htmlspecialchars($id["nim"]);
-//     $nama = htmlspecialchars($id["nama"]);
-//     $email = htmlspecialchars($id["email"]);
-//     $jurusan = htmlspecialchars($id["jurusan"]);
-//     $gambar = htmlspecialchars($id["gambar"]);
-
-//     global $conn;
-//     mysqli_query($conn, "UPDATE mahasiswa SET
-//                     nim = '$nim',
-//                     nama = '$nama',
-//                     email = '$email',
-//                     jurusan = '$jurusan',
-//                     gambar = '$gambar'
-//                 WHERE id = $id
-//                     ");
-//     return mysqli_affected_rows($conn);
-// }
-
 function ubah($data)
 {
     $id = $data["id"];
