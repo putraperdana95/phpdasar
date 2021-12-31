@@ -66,7 +66,8 @@ function cari($keyword)
     // global $conn;
     $query = "SELECT * FROM mahasiswa WHERE 
     nama LIKE '%$keyword%' OR
-    nim LIKE '%$keyword%'
+    nim LIKE '%$keyword%' OR
+    jurusan LIKE '%$keyword%'
     ";
     return query($query);
 }
