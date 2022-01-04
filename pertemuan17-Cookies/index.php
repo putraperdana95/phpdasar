@@ -60,7 +60,7 @@ if (isset($_POST["cari"])) {
                     <a href="ubah.php?id=<?= $row["id"]; ?>">Ubah</a> |
                     <a href="hapus.php?id=<?= $row["id"]; ?>" onclick="return confirm ('yakin ingin menghapus data ini?')">Hapus</a>
                 </td>
-                <td><img src="img/<?= $row["gambar"]; ?>" alt="" width="50px"></td>
+                <td><img src="img/<?= $row["gambar"]; ?>" alt="" width="100px"></td>
                 <td><?= $row["nim"] ?></td>
                 <td><?= $row["nama"] ?></td>
                 <td><?= $row["email"] ?></td>
@@ -68,6 +68,7 @@ if (isset($_POST["cari"])) {
             </tr>
             <?php $i++; ?>
         <?php endforeach; ?>
+
 
     </table>
 </body>
