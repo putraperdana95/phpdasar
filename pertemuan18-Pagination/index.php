@@ -48,8 +48,8 @@ if (isset($_POST["cari"])) {
 
     <form method="post" action="">
 
-        <input type="text" name="keyword" size="40" autofocus placeholder="masukkan nama atau nim mahasiswa" autocomplete="off">
-        <button type="submit" name="cari">Cari Mahasiswa</button>
+        <input type="text" name="keyword" size="40" autofocus placeholder="masukkan nama atau nim mahasiswa" autocomplete="off" id="keyword">
+        <button type="submit" name="cari" id="tombol-cari">Cari Mahasiswa</button>
 
     </form>
     <br>
